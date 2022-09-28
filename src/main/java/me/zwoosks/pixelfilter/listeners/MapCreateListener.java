@@ -69,16 +69,16 @@ public class MapCreateListener implements Listener {
         }
         mainDelay.put(player.getUniqueId(), System.currentTimeMillis());
         // Since we proceed here we add the player to a list that will prevent him from dropping the map
-        // (it is important for render loading purposes)
+        // (it is important for render loading purposes, if delay is not added there will be no time for the server to render the map)
         StaticVars.addNoDrop(player.getUniqueId());
         StaticVars.setPlayerMapOnProcess(player, event.getMap().getId());
+        player.sendMessage(Messages.colorizer(plugin.getConfig().getString("messages.startedSearching")));
         // Asynchronous task and a bit of delay to wait for the created map to be rendered
         new BukkitRunnable() {
             @Override
             public void run() {
                 MapView map = event.getMap();
                 try {
-                    player.sendMessage(Messages.colorizer(plugin.getConfig().getString("messages.startedSearching")));
                     DatabaseManager dbm = new DatabaseManager(plugin.getConfig(), plugin);
                     // compare created map with blacklisted ones
                     BufferedImage createdMap = getImageMap(map, player);
