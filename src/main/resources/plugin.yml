@@ -1,0 +1,10 @@
+name: PixelFilter
+version: '${project.version}'
+main: me.zwoosks.pixelfilter.PixelFilter
+authors: [ zwoosks ]
+description: Pixelart filter
+commands:
+  pixelfilter:
+    description: PixelFilter main command
+    usage: /<command>
+    aliases: pf

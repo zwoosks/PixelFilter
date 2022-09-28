@@ -1,0 +1,28 @@
+messages:
+  mapCreated: "&aEl mapa que has intentado crear está en la lista de permitidos, felicidades!"
+  imgNotFound: "&bImagen no encontrada, vamos a añadir al mapa a una base de datos para ser verificado manualmente..."
+  imgSubmitted: "&bEl mapa ha sido añadido a la base de datos correctamente. De momento no podrás crearlo, pero cuando se revise el pixelart recibirás un mensaje"
+  noPerms: "&cTe falta el nodo de permiso %perm% para realizar esta acción"
+  onlyOneMap: "&cSolo puedes tener un mapa en mano para hacer esto"
+  wait: "&cEspera 5 segundos antes de volver a hacer esta acción"
+  waitMain: "&cTienes que esperar 10 minutos entre cada creación de mapa"
+  mapBlacklisted: "&cNo puedes crear este mapa. Su imagen se encuentra en la lista negra. Si crees que es un error, informa a un administrador"
+  waitInteract: "&cTienes que esperar un período de 10 segundos entre intentos de creación de mapas"
+  noDrop: "&cno puedes dropear eso, ¡el proceso aún está en marcha!"
+  noDamage: "&cConectando con la base de datos, daño recibido cancelado"
+  noCommands: "&c¡Error! No puedes ejecutar comandos mientras estamos conectando con la base de datos"
+  noInteract: "&cNo puedes interactuar con objetos mientras estamos conectando con la base de datos"
+  alreadySubmitted: "&cYa has realizado una petición para añadir este pixelart a la lista de los permitidos. Ten paciencia, esto se revisa manualmente por el staff"
+  startedSearching: "&aEl plugin ha comenzado a buscar el mapa entre las bases de datos existentes. Por favor, mientras el proceso se esté ejecutando no interactúes con otros mapas o los vas a perder."
+database:
+  address: 0.0.0.0
+  port: 3306
+  db: "s75001_testing"
+  user: "u75001_oQ4qjXLwFq"
+  password: "WfWgjTyM^!KkCo@0XiXA4yk6"
+config:
+  waitSeconds: 10
+  waitMainMinutes: 10
+  blacklistMaxDifference: 1.0
+  allowMaxDifference: 1.0
+  submitMaxDifference: 1.0
